@@ -57,7 +57,7 @@ node AddAt(node head, int value, int position) {
 		if (k!=position)			//check if position is available
 		{
 			head = Append(head, value);//insert at the end if there's no correct position
-			printf_s("The position inputed is greater than the length of the list!");
+			printf_s("The position inputed is greater than the length of the list!\n");
 		}
 		else
 		{
@@ -72,7 +72,7 @@ node AddAt(node head, int value, int position) {
 node DelHead(node head) {			//Delete the first node
 	if (head==NULL)
 	{
-		printf_s("No list to delete!");
+		printf_s("No list to delete!\n");
 	}
 	else
 	{
@@ -164,6 +164,7 @@ void Traverser(node head) {				//Show all data in the list
 	for (node p = head; p != NULL; p = p->next) {
 		printf_s("%5d", p->data);
 	}
+	printf_s("\n");
 }
 
 node InitHead() {
@@ -186,13 +187,13 @@ node Input() {
 	int n, value;
 	do
 	{
-		printf_s("Enter the number of node: ");
+		printf_s("\nEnter the number of node: ");
 		scanf_s("%d", &n);
 	} while (n<=0);
 
 	for (int i = 0; i < n; i++)
 	{
-		printf_s("Add new value: ");
+		printf_s("\nAdd new value: ");
 		scanf_s("%d", &value);
 		head = Append(head, value);
 	}
