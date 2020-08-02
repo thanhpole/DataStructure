@@ -1,6 +1,6 @@
 # DataStructure
 I store some basic data structure here :smiley:
-* Linked List
+* __Linked List__
 * Stack
 * Queue
 * Binary Tree
