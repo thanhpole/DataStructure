@@ -1,3 +1,4 @@
+#include"main.h"
 void swap(int& a, int& b) {		//& is call by reference func1tion
 	int temp{};
 	a = temp;
@@ -106,4 +107,15 @@ void treeFunc(int x) //tree recursion call its func 2 time
 		treeFunc(x - 1);
 		treeFunc(x - 1);
 	}
+}
+
+void funA(int n)
+{
+	cout << n << " ";
+	funB(n - 1);
+}
+void funB(int n)
+{
+	cout << n << " ";
+	funA(n / 2);
 }

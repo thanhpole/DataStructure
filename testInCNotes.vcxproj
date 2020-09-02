@@ -21,10 +21,12 @@
   <ItemGroup>
     <ClCompile Include="src\link_list.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\recursion.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\LinkedList.h" />
-    <ClInclude Include="src\main.h" />
+    <ClInclude Include="header\LinkedList.h" />
+    <ClInclude Include="header\main.h" />
+    <ClInclude Include="header\recursion.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -80,15 +82,19 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\thanh\source\repos\testInCNotes\header</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\thanh\source\repos\testInCNotes\header</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\thanh\source\repos\testInCNotes\header</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\Users\thanh\source\repos\testInCNotes\header</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
