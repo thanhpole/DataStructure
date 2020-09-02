@@ -1,7 +1,12 @@
 #include"main.h"
 
-int main() {
-	std::cout << "\n Create a new Linked List";
+using namespace std;
+
+
+
+int main()
+{
+	/*std::cout << "\n Create a new Linked List";
 	node head = Input();
 	Traverser(head);
 
@@ -16,5 +21,40 @@ int main() {
 	for (int i = 0; i < Length(head); i++)
 	{
 		std::cout << "\n Node " << i << " has value: " << Get(head, i);
-	}
+	}*/
+	//int a, b;
+	//a = 5; b = 6;
+	//swap(a, b);
+	//std::cout << a<<endl;
+
+	//int* newArray = creatArray(10);
+
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	cout << newArray[i];
+	//}
+
+	/*rectangle a{ 5,10 };
+	int b = area(&a);
+	cout << b;*/
+
+	//normal class
+	/*rectangle a(10, 20);
+	int b = a.area();
+	cout << b << endl;
+	a.changeLength(20);
+	b = a.area();
+	cout << b;*/
+
+	//template class
+	//rectangle<float> a(1.5, 3.2);
+	//float b = a.area();
+	//cout << b;
+
+	int b = 5;
+	func1(b);
+
+	//cout << func2(b);
+
+	treeFunc(b);
 }
